@@ -82,10 +82,18 @@ Then install the human body skeleton tracking
     $ catkin_make
     $ rospack profile
 
+### HoloLens develop tools
+Refer to the [HoloLens tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) site for relative files.
+At least, you must to be familier with the tutorial [100](https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-100), [101](https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-101) in order to re-build our HoloLens mobile App.
+
 ## Usage
 There are three part to start our work. PC for human body tracking [TODO], ARC platform, Client [TODO]  
 
-### PC [TODO]
+### PC 
+    $ cd skeleton/
+    $ catkin_make -DCMAKE_BUILD_TYPE=release  [TODO] remove the devel folder
+    $ source devel/setup.bash
+    $ roslaunch skeleton_markers ARC_demo.launch
 
 ### ARC platform
 1. Start the EMSK ARC to wait for call.
@@ -94,4 +102,22 @@ There are three part to start our work. PC for human body tracking [TODO], ARC p
 ![call](imgs/arc_call.PNG)
 3. The ARC will process the recieve skeleton andsent the informations to client.
 
-### Client [TODO]
+### Client 
+1. You must to be familier with the develop of HoloLens UWP mobile APP using Unity3D, or you probably make a failure of building this.
+2. Follow the [Holograms 101](https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-101), and you can use the project in the client folder.
+3. Change the IP address to the IP of esp8266 in CubeCommands.cs.
+4. Using Holographic Emulation to sync HoloLens and press play in unity editor; then air tab the GameObject Cube.
+4. Our project provide two kinds of 3D human model to experience 3D remote body interaction.if you can success use the project in client folder, and you can change the model by following steps.
+    step1. Remove all the script component under the GameObject TransformCentroller and drag c# script ChanTransform(for unity-chan model) or TransformCenter(for Alpha@Alpha).
+    step2. Enable the GameObject unitychan or Alpha@Alpha.
+    step3. Modify the attributes \_transCenter type like TransformCenter or ChanTransform and the initial value in Start method in c# script CubeCommands.cs.
+    step4. press play.
+
+Note: The size of client app project is too big, you can contact us to get the client app project
+
+Alternative client of HoloLens
+We have not implemented any other client, but you can build yourself and can follow the below rule.
+Client send a request for esp8266 server, and client will keep get a byte array with length 252 which is composed up from 15 group of 4 float, represented quaternion of each joint, and 3 float, represented the torso position relative to depth camera.
+
+Note: We had little time to complete this work. If we advance to the second round, we will make it more.
+
