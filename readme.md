@@ -3,19 +3,19 @@
 Contents
 --------
 
-- [Introduction](#Introduction)
-- [Required Hardware](#Required-Hardware)
-- [Require Software](#Require-Software)
-- [Hardware Connection](#Hardware-Connection)
-- [Architecture](#Architecture)
-- [User Manual](#User-Manual)
-    - [Installations](#Installations)
-        - [FTDI FT2232 dirver](#FTDI-FT2232-dirver)
-        - [OpenNI](#OpenNI)
-    - [Usage](#Usage)
-        - [PC](#PC)
-        - [ARC](#ARC)
-        - [Client](#Client)
+- [Introduction](#introduction)
+- [Required Hardware](#required-hardware)
+- [Require Software](#require-software)
+- [Hardware Connection](#hardware-connection)
+- [Architecture](#architecture)
+- [User Manual](#user-manual)
+    - [Installations](#installations)
+        - [FTDI FT2232 dirver](#ftdi-ft2232-dirver)
+        - [OpenNI](#openni)
+    - [Usage](#usage)
+        - [PC](#pc)
+        - [ARC](#arc-platform)
+        - [Client](#client)
 
 ## Introduction
 
