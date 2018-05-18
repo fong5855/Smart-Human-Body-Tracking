@@ -11,7 +11,7 @@
 #include "embARC_debug.h"
 
 #define WIFI_SSID   "\"VLSILAB_2G2\""
-#define WIFI_PWD    "\"vlsi95514\""
+#define WIFI_PWD    "\"ur pwd\""
 
 char esp_data_cmd[] = "AT+CIPSEND=0,252\r\n";
 static char http_get[] = "GET /";
