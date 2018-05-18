@@ -95,7 +95,7 @@ Refer to the [HoloLens tools](https://docs.microsoft.com/en-us/windows/mixed-rea
 At least, you must to be familier with the tutorial [100](https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-100), [101](https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-101) in order to re-build our HoloLens mobile App.
 
 ## Usage
-There are three part to start our work. PC for human body tracking [TODO], ARC platform, Client [TODO]  
+There are three part to start our work. **PC for human body tracking**, **ARC platform for saving power and handle data transmission**, **Client for user applications realization**  
 
 ### PC 
     $ cd skeleton/
@@ -104,6 +104,11 @@ There are three part to start our work. PC for human body tracking [TODO], ARC p
     $ roslaunch skeleton_markers ARC_demo.launch
 
 ### ARC platform
+Make sure the EMSK version is 2.2 and all configures are the same as makefile.  
+
+    $ cd #(ARC_PATH)
+    $ make run
+    
 1. Start the EMSK ARC to wait for call.
 ![init](imgs/arc_init.PNG)
 2. User make a call to EMSK, then the EMSK ARC will poewer up the depth camera module and sent the detect human body infomations back.
@@ -121,11 +126,11 @@ There are three part to start our work. PC for human body tracking [TODO], ARC p
     step3. Modify the attributes \_transCenter type like TransformCenter or ChanTransform and the initial value in Start method in c# script CubeCommands.cs.
     step4. press play.
 
-Note: The size of client app project is too big, you can contact us to get the client app project
+**Note: The size of client app project is too large, you can contact us to get the client app project.**
 
-Alternative client of HoloLens
+### Alternative client of HoloLens
 We have not implemented any other client, but you can build yourself and can follow the below rule.
 Client send a request for esp8266 server, and client will keep get a byte array with length 252 which is composed up from 15 group of 4 float, represented quaternion of each joint, and 3 float, represented the torso position relative to depth camera.
 
-Note: We had little time to complete this work. If we advance to the second round, we will make it more.
+**Note: We had little time to complete this work. If we advance to the second round, we will make it more.**
 
