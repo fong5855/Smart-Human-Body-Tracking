@@ -19,6 +19,14 @@ Contents
 
 ## Introduction
 
+## Result
+<p align="center">
+  <img src="imgs/final_v1.gif", width="854">
+</p>
+<p align="center">
+  <img src="imgs/final_v2.gif", width="854">
+</p>
+
 ## Required Hardware
 * DesignWare ARC EM Starter Kit(EMSK)
 * ESP8266 WiFi module
