@@ -91,7 +91,7 @@ There are three part to start our work. PC for human body tracking [TODO], ARC p
 
 ### PC 
     $ cd skeleton/
-    $ catkin_make -DCMAKE_BUILD_TYPE=release  [TODO] remove the devel folder
+    $ catkin_make -DCMAKE_BUILD_TYPE=release  
     $ source devel/setup.bash
     $ roslaunch skeleton_markers ARC_demo.launch
 

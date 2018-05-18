@@ -1,8 +1,0 @@
-prefix=/home/jyli/jy_demo/humanBodytracker/local_ws/devel
-
-Name: openni_tracker
-Description: Description of openni_tracker
-Version: 0.2.0
-Cflags: 
-Libs: -L/home/jyli/jy_demo/humanBodytracker/local_ws/devel/lib 
-Requires: 
