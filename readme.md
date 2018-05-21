@@ -18,7 +18,8 @@ Contents
         - [Client](#client)
 
 ## Introduction
-
+3D remote interaction as following show.
+![flow](imgs/flow.PNG)
 ## Result
 <p align="center">
   <img src="imgs/final_v1.gif", width="854">
