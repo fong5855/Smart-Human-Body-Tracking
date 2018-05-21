@@ -117,7 +117,7 @@ Make sure the EMSK version is 2.2 and all configures are the same as makefile.
 3. The ARC will process the recieve skeleton andsent the informations to client.
 
 ### Client 
-1. You must to be familier with the develop of HoloLens UWP mobile APP using Unity3D, or you probably make a failure of building this.
+1. You must be familier with the develop of HoloLens UWP mobile APP using Unity3D, or you probably make a failure of building this.
 2. Follow the [Holograms 101](https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-101), and you can use the project in the client folder.
 3. Change the IP address to the IP of esp8266 in CubeCommands.cs.
 4. Using Holographic Emulation to sync HoloLens and press play in unity editor; then air tab the GameObject Cube.
