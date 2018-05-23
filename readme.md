@@ -18,7 +18,7 @@ Contents
         - [Client](#client)
 
 ## Introduction
-3D remote interaction as following show.
+This repo is for ARC contest. The demo is 3D remote interaction as following show.
 ![flow](imgs/flow.PNG)
 ## Result
 <p align="center">
