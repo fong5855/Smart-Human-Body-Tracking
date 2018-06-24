@@ -19,7 +19,7 @@ Contents
 
 ## Introduction
 3D remote interaction as following show.
-![flow](imgs/flow.PNG)
+![flow](imgs/flow1.PNG)
 ## Result
 <p align="center">
   <img src="imgs/final_v1.gif", width="854">
@@ -44,7 +44,7 @@ Contents
 * Client display
 
 ## Hardware Connection
-![flow](imgs/flow.PNG)
+![flow](imgs/flow1.PNG)
 ![Connection](imgs/arc_connection.jpg)  
 
 ## Architecture
@@ -122,16 +122,15 @@ Make sure the EMSK version is 2.2 and all configures are the same as makefile.
 3. Change the IP address to the IP of esp8266 in CubeCommands.cs.
 4. Using Holographic Emulation to sync HoloLens and press play in unity editor; then air tab the GameObject Cube.
 4. Our project provide two kinds of 3D human model to experience 3D remote body interaction.if you can success use the project in client folder, and you can change the model by following steps.
-    step1. Remove all the script component under the GameObject TransformCentroller and drag c# script ChanTransform(for unity-chan model) or TransformCenter(for Alpha@Alpha).
-    step2. Enable the GameObject unitychan or Alpha@Alpha.
-    step3. Modify the attributes \_transCenter type like TransformCenter or ChanTransform and the initial value in Start method in c# script CubeCommands.cs.
-    step4. press play.
+    step1. Remove all the script component under the GameObject TransformCentroller and drag c# script ChanTransform(for unity-chan model) or TransformCenter(for Alpha@Alpha).\r
+    step2. Enable the GameObject unitychan or Alpha@Alpha.\r
+    step3. Modify the attributes \_transCenter type like TransformCenter or ChanTransform and the initial value in Start method in c# script CubeCommands.cs.\r
+    step4. press play.\r
 
-**Note: The size of client app project is too large, you can contact us to get the client app project.**
 
 ### Alternative client of HoloLens
 We have not implemented any other client, but you can build yourself and can follow the below rule.
-Client send a request for esp8266 server, and client will keep get a byte array with length 252 which is composed up from 15 group of 4 float, represented quaternion of each joint, and 3 float, represented the torso position relative to depth camera.
+Client send a request for esp8266 server, and client will keep get a byte array with length 252 which is composed up from 15 group of 4 floats, represented quaternion of each joint, and 3 floats, represented the torso position relative to depth camera.
 
 **Note: We had little time to complete this work. If we advance to the second round, we will make it more.**
 
