@@ -19,7 +19,7 @@ Contents
 
 ## Introduction
 3D remote interaction as following show.
-![flow](imgs/flow1.PNG)
+![flow](imgs/flow1.png)
 ## Result
 <p align="center">
   <img src="imgs/final_v1.gif", width="854">
@@ -44,7 +44,7 @@ Contents
 * Client display
 
 ## Hardware Connection
-![flow](imgs/flow1.PNG)
+![flow](imgs/flow1.png)
 ![Connection](imgs/arc_connection.jpg)  
 
 ## Architecture
